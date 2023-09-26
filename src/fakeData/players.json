@@ -1,0 +1,83 @@
+[
+    {
+        "id": 882,
+        "name": "David de Gea",
+        "age": 31,
+        "number": 1,
+        "price": 123,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/882.png"
+    },
+    {
+        "id": 19088,
+        "name": "D. Henderson",
+        "age": 24,
+        "number": 26,
+        "price": 110,
+        "position": "Goalkeeper",
+        "photo": "https://media.api-sports.io/football/players/19088.png"
+    },
+    {
+        "id": 886,
+        "name": "Diogo Dalot",
+        "age": 22,
+        "number": 20,
+        "price": 250,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/886.png"
+    },
+    {
+        "id": 891,
+        "name": "L. Shaw",
+        "age": 26,
+        "number": 23,
+        "price": 100,
+        "position": "Defender",
+        "photo": "https://media.api-sports.io/football/players/891.png"
+    },
+    {
+        "id": 904,
+        "name": "P. Pogba",
+        "age": 28,
+        "number": 6,
+        "price": 500,
+        "position": "Midfielder",
+        "photo": "https://media.api-sports.io/football/players/904.png"
+    },
+    {
+        "id": 274,
+        "name": "E. Cavani",
+        "age": 34,
+        "number": 7,
+        "price": 200,
+        "position": "Attacker",
+        "photo": "https://media.api-sports.io/football/players/274.png"
+    },
+    {
+        "id": 19329,
+        "name": "D. James",
+        "age": 24,
+        "number": 21,
+        "price": 180,
+        "position": "Attacker",
+        "photo": "https://media.api-sports.io/football/players/19329.png"
+    },
+    {
+        "id": 909,
+        "name": "M. Rashford",
+        "age": 24,
+        "number": 10,
+        "price": 140,
+        "position": "Attacker",
+        "photo": "https://media.api-sports.io/football/players/909.png"
+    },
+    {
+        "id": 905,
+        "name": "Fred",
+        "age": 28,
+        "number": 17,
+        "price": 120,
+        "position": "Midfielder",
+        "photo": "https://media.api-sports.io/football/players/905.png"
+    }
+]
