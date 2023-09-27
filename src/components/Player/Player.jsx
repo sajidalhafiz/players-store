@@ -2,8 +2,10 @@ import './Player.css';
 
 const Player = (props) => {
     // console.log(props)
-    const { photo, name, age, number, position, price } = props.player;
-
+    const { id, photo, name, age, number, position, price } = props.player;
+    
+    const addToCart = props.handleAddToCart;
+    
     return (
         <div className='player-card'>
             <img src={photo} alt="" />
@@ -12,7 +14,7 @@ const Player = (props) => {
             <p>Player Number: {number}</p>
             <p>Position: {position}</p>
             <h2>Price: ${price}</h2>
-            <button>Add To Cart</button>
+            <button onClick={() => addToCart(props.player)}>Add To Cart</button>
         </div>
     );
 };

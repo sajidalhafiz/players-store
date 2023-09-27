@@ -2,7 +2,7 @@ import './PlayerList.css';
 
 const PlayerList = () => {
     return (
-        <div>
+        <div className='player-list-container'>
             <p>player-1</p>
         </div>
     );

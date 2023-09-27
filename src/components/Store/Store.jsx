@@ -6,6 +6,7 @@ import Cart from '../Cart/Cart';
 const Store = () => {
 
     const [players, setPlayers] = useState([]);
+    const [selectedPlayer, setSelectedPlayer] = useState([]);
 
     useEffect(() => {
         fetch('players.json')
@@ -13,6 +14,13 @@ const Store = () => {
             .then(data => setPlayers(data))
     }, []);
 
+    const handleAddToCart = (player) => {
+        // console.log("added to cart", player)
+        let newSelectedPlayer = [...selectedPlayer, player];
+        setSelectedPlayer(newSelectedPlayer);
+        // console.log(selectedPlayer)
+    }
+    
     return (
         <div className='store-container'>
             <div className="player-container">
@@ -20,11 +28,14 @@ const Store = () => {
                     players.map(player => <Player
                         key={player.id}
                         player={player}
+                        handleAddToCart={handleAddToCart}
                     ></Player>)
                 }
             </div>
             <div>
-                <Cart></Cart>
+                <Cart
+                    totalPlayers={selectedPlayer}
+                ></Cart>
             </div>
         </div>
     );
