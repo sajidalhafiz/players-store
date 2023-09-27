@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.player-card {
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+.player-card button{
+    background-color: orange;
+    color: white;
+    margin-top: 16px;
+}
