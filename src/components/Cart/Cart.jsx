@@ -1,14 +1,16 @@
 import PlayerList from '../PlayerList/PlayerList';
 import './Cart.css';
 
-const Cart = ({totalPlayers}) => {
-    console.log(totalPlayers)
+const Cart = ({ selectedPlayer }) => {
+    console.log(selectedPlayer)
     return (
-        <div className='cart-container'>
-            <h2>Order Summary</h2>
-            {/* selected total players */}
-            <h3>Total Players: {totalPlayers.length}</h3>
-            <PlayerList></PlayerList>
+        <div className='player-list-container'>
+            {
+                selectedPlayer.map(player => <PlayerList
+                    key={player.id}
+                    player={player}
+                ></PlayerList>)
+            }
         </div>
     );
 };

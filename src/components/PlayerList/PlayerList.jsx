@@ -1,9 +1,10 @@
 import './PlayerList.css';
 
-const PlayerList = () => {
+const PlayerList = ({player}) => {
     return (
-        <div className='player-list-container'>
-            <p>player-1</p>
+        <div className='player'>
+            <h4>Name: {player.name}</h4>
+            <p>Price: ${player.price}</p>
         </div>
     );
 };

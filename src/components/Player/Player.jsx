@@ -2,7 +2,7 @@ import './Player.css';
 
 const Player = (props) => {
     // console.log(props)
-    const { id, photo, name, age, number, position, price } = props.player;
+    const { photo, name, age, number, position, price } = props.player;
     
     const addToCart = props.handleAddToCart;
     
