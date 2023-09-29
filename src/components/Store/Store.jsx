@@ -14,22 +14,24 @@ const Store = () => {
             .then(data => setPlayers(data))
     }, []);
 
-    const handleAddToCart = (player) => {
-        // console.log("added to cart", player)
 
+
+    const handleAddToCart = (player) => {
         for (const plr of selectedPlayer) {
-            // console.log(plr)
             if (plr.id === player.id) {
                 return alert("Current Player: " + player.name)
             }
         }
-
+        
         let newSelectedPlayer = [...selectedPlayer, player];
         setSelectedPlayer(newSelectedPlayer);
-
     }
-    // console.log(selectedPlayer)
+
     // total price calculation
+    let totalPrice = 0;
+    for (const player of selectedPlayer) {
+        totalPrice += player.price;
+    }
 
     return (
         <div className='store-container'>
@@ -48,7 +50,7 @@ const Store = () => {
                 <Cart
                     selectedPlayer={selectedPlayer}
                 ></Cart>
-                <h3>Total Price: ${}</h3>
+                <h3>Total Price: ${totalPrice}</h3>
             </div>
         </div>
     );

@@ -1,7 +1,6 @@
 import './Player.css';
 
 const Player = (props) => {
-    // console.log(props)
     const { photo, name, age, number, position, price } = props.player;
     
     const addToCart = props.handleAddToCart;
